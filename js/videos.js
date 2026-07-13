@@ -11,11 +11,11 @@ function videoCardHTML(channel, v) {
     <div class="video-card">
       <a class="video-thumb-link" href="#/watch/${channel.id}/${v.id}">
         <div class="thumb-wrap">${thumb}${durationBadge}</div>
-        <div class="video-title">${v.title}</div>
+        <div class="video-title">${escapeHTML(v.title)}</div>
       </a>
       <a class="video-channel-link" href="#/channel/${channel.id}">
         ${avatarHTML(channel)}
-        <span class="channel-name">${channel.name}</span>
+        <span class="channel-name">${escapeHTML(channel.name)}</span>
       </a>
     </div>
   `;
@@ -102,7 +102,7 @@ function renderChannelPage(channelId) {
 
   app.innerHTML = `
     <div class="top-bar">
-      <h1>${channel.name}</h1>
+      <h1>${escapeHTML(channel.name)}</h1>
       <a class="back-button" href="#/">&#8594; الرئيسية</a>
     </div>
     <div class="video-grid">${cards}</div>
@@ -132,7 +132,7 @@ function renderWatchPage(channelId, videoId) {
       </div>
     </div>
     <div class="watch-meta">
-      <p class="player-title">${video.title}</p>
+      <p class="player-title">${escapeHTML(video.title)}</p>
       ${placeholder ? '' : `
       <div class="watch-progress">
         <div class="watch-progress-bar"><div class="watch-progress-fill" id="watchProgressFill"></div></div>
@@ -140,7 +140,7 @@ function renderWatchPage(channelId, videoId) {
       </div>`}
       <a class="watch-channel-link" href="#/channel/${channel.id}">
         ${avatarHTML(channel, 'channel-avatar-lg')}
-        <span class="channel-name">${channel.name}</span>
+        <span class="channel-name">${escapeHTML(channel.name)}</span>
       </a>
     </div>
   `;
@@ -186,6 +186,7 @@ function toggleShieldPlay() {
 
 /* ---------- إنشاء مشغل يوتيوب ومراقبة نهاية الفيديو + تتبع التقدم ---------- */
 let watchProgressInterval = null;
+let currentWatchVideoId = null;
 
 function stopWatchProgressTracking() {
   if (watchProgressInterval) {
@@ -199,6 +200,18 @@ function startWatchProgressTracking() {
   watchProgressInterval = setInterval(() => {
     const fill = document.getElementById('watchProgressFill');
     const timeEl = document.getElementById('watchProgressTime');
+    const shield = document.getElementById('clickShield');
+
+    // كشف الإعلانات: أثناء عرض إعلان، الفيديو المُشغّل فعليًا يختلف عن الفيديو المطلوب
+    // وقتها نعطّل الطبقة الشفافة مؤقتًا عشان زر "تخطي الإعلان" الأصلي يشتغل
+    if (shield && ytPlayer && ytPlayer.getVideoData) {
+      try {
+        const data = ytPlayer.getVideoData();
+        const isAd = !!(data && data.video_id && currentWatchVideoId && data.video_id !== currentWatchVideoId);
+        shield.classList.toggle('ad-playing', isAd);
+      } catch (e) {}
+    }
+
     // إذا انتقلنا لصفحة ثانية، هذي العناصر ما تكون موجودة، فنوقف المؤقت تلقائياً
     if (!fill || !timeEl || !ytPlayer || !ytPlayer.getDuration) {
       stopWatchProgressTracking();
@@ -218,6 +231,7 @@ function createPlayer(youtubeId, channel) {
     try { ytPlayer.destroy(); } catch (e) {}
   }
   stopWatchProgressTracking();
+  currentWatchVideoId = youtubeId;
 
   function build() {
     ytPlayer = new YT.Player('ytplayer', {

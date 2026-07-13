@@ -347,6 +347,12 @@ h1, h2 { margin: 0; font-weight: 700; }
 }
 .toggle-icon.show { opacity: 1; }
 
+/* أثناء عرض إعلان: نعطّل الطبقة الشفافة عشان زر "تخطي الإعلان" الأصلي يشتغل */
+.click-shield.ad-playing {
+  pointer-events: none;
+  background: transparent;
+}
+
 .fullscreen-btn {
   position: absolute;
   bottom: 10px;
