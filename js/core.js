@@ -38,9 +38,19 @@ function formatClock(totalSeconds) {
 function avatarHTML(channel, sizeClass) {
   const cls = sizeClass ? `channel-avatar ${sizeClass}` : 'channel-avatar';
   if (channel.avatar) {
-    return `<img class="${cls}" src="${channel.avatar}" alt="${channel.name}">`;
+    return `<img class="${cls}" src="${channel.avatar}" alt="${escapeHTML(channel.name)}">`;
   }
   return `<div class="${cls}" style="background:${channel.color}">${initial(channel.name)}</div>`;
+}
+
+/* تنظيف أي نص قبل إدخاله بالـ HTML - يمنع عناوين فيها & أو < أو " من كسر بنية الصفحة */
+function escapeHTML(str) {
+  return String(str == null ? '' : str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 /* أداة عامة: خلط ترتيب مصفوفة (تُستخدم بلعبة الذاكرة ولعبة التركيبة) */
