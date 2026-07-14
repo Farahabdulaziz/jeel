@@ -200,15 +200,15 @@ function startWatchProgressTracking() {
   watchProgressInterval = setInterval(() => {
     const fill = document.getElementById('watchProgressFill');
     const timeEl = document.getElementById('watchProgressTime');
-    const shield = document.getElementById('clickShield');
 
     // كشف الإعلانات: أثناء عرض إعلان، الفيديو المُشغّل فعليًا يختلف عن الفيديو المطلوب
-    // وقتها نعطّل الطبقة الشفافة مؤقتًا عشان زر "تخطي الإعلان" الأصلي يشتغل
-    if (shield && ytPlayer && ytPlayer.getVideoData) {
+    // وقتها نعطّل الطبقة الشفافة وزر التكبير مؤقتًا (زر تخطي الإعلان الأصلي بنفس مكان زر التكبير - تحت يمين)
+    const frame = document.getElementById('playerFrame');
+    if (frame && ytPlayer && ytPlayer.getVideoData) {
       try {
         const data = ytPlayer.getVideoData();
         const isAd = !!(data && data.video_id && currentWatchVideoId && data.video_id !== currentWatchVideoId);
-        shield.classList.toggle('ad-playing', isAd);
+        frame.classList.toggle('ad-playing', isAd);
       } catch (e) {}
     }
 

@@ -347,10 +347,13 @@ h1, h2 { margin: 0; font-weight: 700; }
 }
 .toggle-icon.show { opacity: 1; }
 
-/* أثناء عرض إعلان: نعطّل الطبقة الشفافة عشان زر "تخطي الإعلان" الأصلي يشتغل */
-.click-shield.ad-playing {
+/* أثناء عرض إعلان: نعطّل الطبقة الشفافة وزر التكبير (يتطابقان مع مكان زر تخطي الإعلان الأصلي) */
+.player-frame.ad-playing .click-shield {
   pointer-events: none;
   background: transparent;
+}
+.player-frame.ad-playing .fullscreen-btn {
+  display: none;
 }
 
 .fullscreen-btn {
