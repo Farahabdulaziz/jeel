@@ -15,15 +15,6 @@
 
 const CHANNELS = [
   {
-    id: "bandora",
-    name: "اكتشف العالم مع بندورة",
-    color: "#F2704A",
-    avatar: "",
-    videos: [
-      { id: "planets", title: "الكواكب - المجموعة الشمسية - عالم الفضاء - تعليم أسماء الكواكب للأطفال", youtubeId: "mkC0lhvJQnc", category: "الفضاء" }
-    ]
-  },
-  {
     id: "zad-alhroof",
     name: "زاد الحروف",
     color: "#1F6F63",
@@ -91,9 +82,9 @@ const CHANNELS = [
     color: "#B85450",
     avatar: "",
     videos: [
-      { id: "tunes-kids-1", title: "قصص سلاف - الفضاء | قناة تيونز كيدز - Tunes Kids", youtubeId: "Cqg6lrbpEdE", category: "الفضاء" },
-      { id: "tunes-kids-2", title: "قصص سلاف - الحذر | قناة تيونز كيدز - Tunes Kids", youtubeId: "Dv7nfzhqmHM", category: "قصص" },
-      { id: "tunes-kids-3", title: "قصص سلاف - عدم الاستئذان | قناة تيونز كيدز - Tunes Kids", youtubeId: "kWQGRctFvTc", category: "قصص" }
+      { id: "tunes-kids-1", title: "قصص سلاف - الفضاء | قناة تيونز كيدز ", youtubeId: "Cqg6lrbpEdE", category: "الفضاء" },
+      { id: "tunes-kids-2", title: "قصص سلاف - الحذر | قناة تيونز كيدز ", youtubeId: "Dv7nfzhqmHM", category: "قصص" },
+      { id: "tunes-kids-3", title: "قصص سلاف - عدم الاستئذان | قناة تيونز كيدز ", youtubeId: "kWQGRctFvTc", category: "قصص" }
     ]
   },
   {
@@ -120,7 +111,7 @@ const CHANNELS = [
     color: "#6C9BCF",
     avatar: "",
     videos: [
-      { id: "what-2", title: "What are bees? How do bees make honey? | Facts about bees for kids - How, What, Why (Episode 2)", youtubeId: "fWarA3WXavE", category: "الطبيعة" },
+      { id: "what-2", title: "ما هو النحل؟ كيف يصنع النحل العسل؟ | حقائق عن النحل للأطفال - كيف، ماذا، ولماذا (الحلقة 2)", youtubeId: "fWarA3WXavE", category: "الطبيعة" },
       { id: "why-1", title: "Why Do Mosquitoes Bite Humans? | Mosquito Information for Kids - How, What, and Why (Episode 1)", youtubeId: "YTjBQCfZ50M", category: "الطبيعة" },
       { id: "memory-zakaria", title: "Memory Card Game | Family Member - brain exercise for family, Learn with Zakaria", youtubeId: "7Q7xzKReviI" },
       { id: "learn-zakaria-1", title: "Wild Animals in Arabic for Kids - الحيوانات للأطفال - حيوانات الغابة باللغة العربية للاطفال", youtubeId: "bJvzjM0uLwI", category: "الحيوانات" },
