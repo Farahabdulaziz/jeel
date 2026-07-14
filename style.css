@@ -335,6 +335,16 @@ h1, h2 { margin: 0; font-weight: 700; }
   align-items: center;
   justify-content: center;
 }
+/* هذي القاعدة أقوى عمدًا (id) عشان تضمن كسر قاعدة .player-frame > div اللي تفرض inset:0
+   على كل الأبناء وكانت تلغي تصغير الطبقة الشفافة بالأعلى بصمت */
+#clickShield {
+  inset: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: 82%;
+}
 .toggle-icon {
   opacity: 0;
   transition: opacity 0.2s ease;
@@ -361,7 +371,7 @@ h1, h2 { margin: 0; font-weight: 700; }
 
 .fullscreen-btn {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
   z-index: 6;
   width: 38px;

@@ -107,22 +107,22 @@ const CHANNELS = [
   },
   {
     id: "learn-zakaria",
-    name: "Learn with Zakaria",
+    name: "تعلم مع زكريا",
     color: "#6C9BCF",
     avatar: "",
     videos: [
       { id: "what-2", title: "ما هو النحل؟ كيف يصنع النحل العسل؟ | حقائق عن النحل للأطفال - كيف، ماذا، ولماذا (الحلقة 2)", youtubeId: "fWarA3WXavE", category: "الطبيعة" },
-      { id: "why-1", title: "Why Do Mosquitoes Bite Humans? | Mosquito Information for Kids - How, What, and Why (Episode 1)", youtubeId: "YTjBQCfZ50M", category: "الطبيعة" },
-      { id: "memory-zakaria", title: "Memory Card Game | Family Member - brain exercise for family, Learn with Zakaria", youtubeId: "7Q7xzKReviI" },
-      { id: "learn-zakaria-1", title: "Wild Animals in Arabic for Kids - الحيوانات للأطفال - حيوانات الغابة باللغة العربية للاطفال", youtubeId: "bJvzjM0uLwI", category: "الحيوانات" },
-      { id: "learn-zakaria-2", title: "Aquatic Animals for Kids in Arabic - الحيوانات للأطفال - حيوانات البحر باللغة العربية للاطفال", youtubeId: "dmAb6XbJmF8", category: "الحيوانات" },
-      { id: "learn-zakaria-3", title: "Farm Animals in Arabic for Kids - الحيوانات للأطفال - حيوانات المزرعة باللغة العربية للاطفال", youtubeId: "d-AcSjaM-dU", category: "الحيوانات" },
-      { id: "learn-zakaria-4", title: "Animal Sounds in Arabic for Kids - أصوات الحيوانات للاطفال باللغة العربية", youtubeId: "I3YnXSeUAto", category: "الحيوانات" }
+      { id: "why-1", title: "لماذا تلدغ البعوضُ البشرَ؟ | معلومات عن البعوض للأطفال - كيف، وماذا، ولماذا (الحلقة 1)", youtubeId: "YTjBQCfZ50M", category: "الطبيعة" },
+      { id: "memory-zakaria", title: "لعبة الذاكرة | أفراد العائلة - تمرين ذهني للعائلة، تعلّم مع زكريا", youtubeId: "7Q7xzKReviI" },
+      { id: "learn-zakaria-1", title: "الحيوانات للأطفال - حيوانات الغابة باللغة العربية للاطفال", youtubeId: "bJvzjM0uLwI", category: "الحيوانات" },
+      { id: "learn-zakaria-2", title: " الحيوانات للأطفال - حيوانات البحر باللغة العربية للاطفال", youtubeId: "dmAb6XbJmF8", category: "الحيوانات" },
+      { id: "learn-zakaria-3", title: "الحيوانات للأطفال - حيوانات المزرعة باللغة العربية للاطفال", youtubeId: "d-AcSjaM-dU", category: "الحيوانات" },
+      { id: "learn-zakaria-4", title: "أصوات الحيوانات للاطفال باللغة العربية", youtubeId: "I3YnXSeUAto", category: "الحيوانات" }
     ]
   },
   {
     id: "siraj",
-    name: "سراج - SIRAJ",
+    name: "سراج",
     color: "#2F6B4F",
     avatar: "",
     videos: [
@@ -145,15 +145,15 @@ const CHANNELS = [
     color: "#F4A259",
     avatar: "",
     videos: [
-      { id: "arabic", title: "Arabic Alphabet for Kids — Learn Arabic Letters | Adam & Mishmish ✏️📚", youtubeId: "zr9RaXlMEP8", category: "أغاني" },
-      { id: "shapes-mishmish", title: "Shapes in Arabic for Kids — Learn Arabic Shapes 🔺🟢| Adam & Mishmish", youtubeId: "PId1Ea81i6k", category: "أغاني" },
-      { id: "action-mishmish", title: "Action & Movement Song in Arabic for Kids🕺👯 | Adam & Mishmish", youtubeId: "2LaIBgvzIRY", category: "أغاني" },
-      { id: "count-mishmish", title: "Count to 10 in Arabic for Kids — Arabic Numbers 🔢 9️⃣| Adam & Mishmish", youtubeId: "eZmQ-SnSD8Y", category: "أغاني" },
-      { id: "finger-mishmish", title: "Finger Family Song in Arabic for Kids✋☝️ | Adam & Mishmish", youtubeId: "wq4VJ_B4Z0A", category: "أغاني" },
+      { id: "arabic", title: "الأبجدية العربية للأطفال — تعلّم الحروف العربية | آدم ومشمش ✏️📚", youtubeId: "zr9RaXlMEP8", category: "أغاني" },
+      { id: "shapes-mishmish", title: "الأشكال باللغة العربية للأطفال — تعلّم الأشكال بالعربية 🔺🟢 | آدم ومشمش", youtubeId: "PId1Ea81i6k", category: "أغاني" },
+      { id: "action-mishmish", title: "أغنية حركية للأطفال باللغة العربية 🕺👯 | آدم ومشمش", youtubeId: "2LaIBgvzIRY", category: "أغاني" },
+      { id: "count-mishmish", title: "عدّ من 1 إلى 10 بالعربية للأطفال — الأرقام العربية 🔢 9️⃣ | آدم ومشمش", youtubeId: "eZmQ-SnSD8Y", category: "أغاني" },
+      { id: "finger-mishmish", title: "أغنية عائلة الأصابع للأطفال باللغة العربية ✋☝️ | آدم ومشمش", youtubeId: "wq4VJ_B4Z0A", category: "أغاني" },
       { id: "clean-mishmish", title: "Clean Up Song in Arabic for Kids — Tidy Your Room 🧸🪀| Adam & Mishmish", youtubeId: "eoHvGHPf26g", category: "أغاني" },
-      { id: "adam-mishmish-1", title: "نلعب، نشارك، نسامح ونتعاون - مجموعة جديدة من آدم ومشمش | Arabic Songs for Kids about sharing", youtubeId: "KDzW70EKvvI", category: "أغاني" },
-      { id: "adam-mishmish-2", title: "آدم يسافر مع مشمش بالطائرة ✈️ - Kids Arabic Travel Songs", youtubeId: "zwzHeaM9nNc", category: "أغاني" },
-      { id: "adam-mishmish-3", title: "أغاني أطفال للطريق 🚗 | آدم ومشمش | Arabic Songs for Kids", youtubeId: "oi5XiSgimIk", category: "أغاني" },
+      { id: "adam-mishmish-1", title: "نلعب، نشارك، نسامح ونتعاون - مجموعة جديدة من آدم ومشمش ", youtubeId: "KDzW70EKvvI", category: "أغاني" },
+      { id: "adam-mishmish-2", title: "آدم يسافر مع مشمش بالطائرة ✈️ ", youtubeId: "zwzHeaM9nNc", category: "أغاني" },
+      { id: "adam-mishmish-3", title: "أغاني أطفال للطريق 🚗 | آدم ومشمش ", youtubeId: "oi5XiSgimIk", category: "أغاني" },
       { id: "treasure-mishmish", title: "Treasure Chest & Transportation Songs for Kids 22 Min 🚗🚂 | Adam Wa Mishmish", youtubeId: "v4dR0HWKcxE", category: "أغاني" }
     ]
   },
@@ -186,16 +186,16 @@ const CHANNELS = [
     color: "#7D8C4C",
     avatar: "",
     videos: [
-      { id: "dawood-kids-1", title: "سورة الفاتحة ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال Quran for Kids-Al Fatihah 30' Repetition", youtubeId: "Uufkkk6D2lk", category: "قرآن" },
-      { id: "dawood-kids-2", title: "سورة الإخلاص ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال Quran for Kids-Al Ikhlas 30' Repetition", youtubeId: "OquUdWeXbVc", category: "قرآن" },
-      { id: "dawood-kids-3", title: "سورة الفلق ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال Quran for Kids-Al Falaq 30' Repetition", youtubeId: "kVoDlXwPMqc", category: "قرآن" },
-      { id: "dawood-kids-4", title: "سورة الناس ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال Quran for Kids-Al Nas 30' Repetition", youtubeId: "jggjZMf3PNc", category: "قرآن" },
-      { id: "dawood-kids-5", title: "قصة السمكة العجيبة قصص نوم - احلى قصص اطفال - Best Kid's story The story of the strange fish", youtubeId: "fSN_8GF5iBI", category: "قصص" },
-      { id: "dawood-kids-6", title: "سورة الناس -تعليم القرآن للأطفال -أحلى قرائة لسورة الناس - قناة داوود Quran for Kids - Al-Nas", youtubeId: "TyKwwVemYhw", category: "قرآن" },
-      { id: "dawood-kids-7", title: "سورة النصر -تعليم القرآن للأطفال -أحلى قرائة لسورة النصر - قناة داوود Quran for Kids - Al-Nasr", youtubeId: "vDGwQD6cZd8", category: "قرآن" },
-      { id: "dawood-kids-8", title: "سورة الكوثر -تعليم القرآن للأطفال -أحلى قرائة لسورة الكوثر - قناة داوود Quran for Kids - Al Kawthar", youtubeId: "Kz7_R4YtQBw", category: "قرآن" },
-      { id: "dawood-kids-9", title: "سورة الإخلاص -تعليم القرآن للأطفال -أحلى قرائة لسورة الإخلاص - قناة داوود Quran for Kids - Al-Ikhlas", youtubeId: "OH74taV8wRE", category: "قرآن" },
-      { id: "dawood-kids-10", title: "سورة القدر -تعليم القرآن للأطفال -أحلى قرائة لسورة القدر - قناة داوود Quran for Kids - Al-Qadr", youtubeId: "9PvY3j74xV4", category: "قرآن" }
+      { id: "dawood-kids-1", title: "سورة الفاتحة ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال ", youtubeId: "Uufkkk6D2lk", category: "قرآن" },
+      { id: "dawood-kids-2", title: "سورة الإخلاص ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال", youtubeId: "OquUdWeXbVc", category: "قرآن" },
+      { id: "dawood-kids-3", title: "سورة الفلق ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال ", youtubeId: "kVoDlXwPMqc", category: "قرآن" },
+      { id: "dawood-kids-4", title: "سورة الناس ٣٠ دقيقة تكرار-أحلى طريقة لحفظ القرآن للأطفال ", youtubeId: "jggjZMf3PNc", category: "قرآن" },
+      { id: "dawood-kids-5", title: "قصة السمكة العجيبة قصص نوم - احلى قصص اطفال ", youtubeId: "fSN_8GF5iBI", category: "قصص" },
+      { id: "dawood-kids-6", title: "سورة الناس -تعليم القرآن للأطفال -أحلى قرائة لسورة الناس - قناة داوود ", youtubeId: "TyKwwVemYhw", category: "قرآن" },
+      { id: "dawood-kids-7", title: "سورة النصر -تعليم القرآن للأطفال -أحلى قرائة لسورة النصر - قناة داوود ", youtubeId: "vDGwQD6cZd8", category: "قرآن" },
+      { id: "dawood-kids-8", title: "سورة الكوثر -تعليم القرآن للأطفال -أحلى قرائة لسورة الكوثر - قناة داوود ", youtubeId: "Kz7_R4YtQBw", category: "قرآن" },
+      { id: "dawood-kids-9", title: "سورة الإخلاص -تعليم القرآن للأطفال -أحلى قرائة لسورة الإخلاص - قناة داوود ", youtubeId: "OH74taV8wRE", category: "قرآن" },
+      { id: "dawood-kids-10", title: "سورة القدر -تعليم القرآن للأطفال -أحلى قرائة لسورة القدر - قناة داوود ", youtubeId: "9PvY3j74xV4", category: "قرآن" }
     ]
   },
 ];
@@ -204,6 +204,6 @@ const CHANNELS = [
 // "memory": بطاقات مقلوبة/تذكّر الأزواج - ألوانها تتناوب بين 4 ألوان كل جولة
 // "puzzle": تركيبة (بازل) بصور حقيقية لمعالم مشهورة - تتناوب بين 4 صور كل جولة
 const GAMES = [
-  { id: "memory", title: "لعبة الذاكرة", emoji: "🧠", color: "#1F6F4A" },
-  { id: "puzzle", title: "تركيبة", emoji: "🧩", color: "#2E6E8C" }
+  { id: "memory", title: "لعبة الذاكرة", emoji: "🧠", color: "#ffe3b0" },
+  { id: "puzzle", title: "تركيبة", emoji: "🧩", color: "#193118" }
 ];
