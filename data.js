@@ -150,11 +150,11 @@ const CHANNELS = [
       { id: "action-mishmish", title: "أغنية حركية للأطفال باللغة العربية 🕺👯 | آدم ومشمش", youtubeId: "2LaIBgvzIRY", category: "أغاني" },
       { id: "count-mishmish", title: "عدّ من 1 إلى 10 بالعربية للأطفال — الأرقام العربية 🔢 9️⃣ | آدم ومشمش", youtubeId: "eZmQ-SnSD8Y", category: "أغاني" },
       { id: "finger-mishmish", title: "أغنية عائلة الأصابع للأطفال باللغة العربية ✋☝️ | آدم ومشمش", youtubeId: "wq4VJ_B4Z0A", category: "أغاني" },
-      { id: "clean-mishmish", title: "Clean Up Song in Arabic for Kids — Tidy Your Room 🧸🪀| Adam & Mishmish", youtubeId: "eoHvGHPf26g", category: "أغاني" },
+      { id: "clean-mishmish", title: "أغنية الترتيب للأطفال — رتّب غرفتك 🧸🪀 | آدم ومشمش", youtubeId: "eoHvGHPf26g", category: "أغاني" },
       { id: "adam-mishmish-1", title: "نلعب، نشارك، نسامح ونتعاون - مجموعة جديدة من آدم ومشمش ", youtubeId: "KDzW70EKvvI", category: "أغاني" },
       { id: "adam-mishmish-2", title: "آدم يسافر مع مشمش بالطائرة ✈️ ", youtubeId: "zwzHeaM9nNc", category: "أغاني" },
       { id: "adam-mishmish-3", title: "أغاني أطفال للطريق 🚗 | آدم ومشمش ", youtubeId: "oi5XiSgimIk", category: "أغاني" },
-      { id: "treasure-mishmish", title: "Treasure Chest & Transportation Songs for Kids 22 Min 🚗🚂 | Adam Wa Mishmish", youtubeId: "v4dR0HWKcxE", category: "أغاني" }
+      { id: "treasure-mishmish", title: "صندوق الكنز وأغاني وسائل النقل للأطفال - 22 دقيقة 🚗🚂 | آدم ومشمش", youtubeId: "v4dR0HWKcxE", category: "أغاني" }
     ]
   },
   {

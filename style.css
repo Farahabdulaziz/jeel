@@ -325,25 +325,20 @@ h1, h2 { margin: 0; font-weight: 700; }
    وتحوّل أي ضغطة إلى تشغيل/إيقاف فقط */
 .click-shield {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 82%;
+  inset: 0;
   z-index: 5;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* الطبقة تغطي الفيديو كامل، إلا مربع صغير بأسفل اليمين مكان زر "تخطي الإعلان" بالضبط.
+     المستطيل المستثنى: من 78% إلى 100% أفقيًا، ومن 86% إلى 100% رأسيًا */
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 78% 86%, 78% 100%, 0 100%);
 }
-/* هذي القاعدة أقوى عمدًا (id) عشان تضمن كسر قاعدة .player-frame > div اللي تفرض inset:0
-   على كل الأبناء وكانت تلغي تصغير الطبقة الشفافة بالأعلى بصمت */
+/* قاعدة بمُعرّف أقوى من .player-frame > div (اللي تفرض inset:0 على كل الأبناء)
+   عشان نتأكد إن الـ clip-path يفضل مطبّق ومحد ما يلغيه */
 #clickShield {
-  inset: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: auto;
-  height: 82%;
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 78% 86%, 78% 100%, 0 100%);
 }
 .toggle-icon {
   opacity: 0;
