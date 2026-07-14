@@ -199,7 +199,7 @@ function openInfoModal() {
     <div class="modal-backdrop" id="modalBackdrop">
       <div class="modal-box welcome-box">
         ${welcomeIntroHTML()}
-        <a class="big-button" href="${SURVEY_URL}" target="_blank" rel="noopener noreferrer">شاركينا رأيك</a>
+        <a class="big-button" href="${SURVEY_URL}" target="_blank" rel="noopener noreferrer">يسعدنا سماع ارائكم</a>
         <button class="big-button secondary" id="infoCloseBtn">إغلاق</button>
       </div>
     </div>
