@@ -1,6 +1,6 @@
 /* ---------- صفحة "عن جيل": شرح المشروع + خلاصة أبحاث علمية ---------- */
 const SURVEY_URL_ABOUT = 'https://forms.gle/xpSXk6ViWbsWdx6v8';
-const CONTACT_EMAIL = 'your-email@example.com'; // غيّري هذا لإيميلك الحقيقي
+const CONTACT_EMAIL = 'farahabdulaziz.sul@gmail.com';
 
 function renderAboutPage() {
   document.title = "عن جيل";
@@ -24,20 +24,6 @@ function renderAboutPage() {
         </p>
       </div>
 
-      <div class="about-stats">
-        <div class="about-stat" style="--stat-color:#1F4E8C">
-          <span class="about-stat-num">٧١ دراسة</span>
-          <span class="about-stat-label">بمشاركة ~١٠٠ ألف شخص حول أثر الفيديو القصير على الانتباه</span>
-        </div>
-        <div class="about-stat" style="--stat-color:#B85C1F">
-          <span class="about-stat-num">أقل من ١٪</span>
-          <span class="about-stat-label">نصيب اللغة العربية من محتوى الإنترنت العالمي</span>
-        </div>
-        <div class="about-stat" style="--stat-color:#1F6F4A">
-          <span class="about-stat-num">+٤٠٠ مليون</span>
-          <span class="about-stat-label">متحدث بالعربية حول العالم</span>
-        </div>
-      </div>
 
       <div class="about-section" style="--section-color:#1F4E8C">
         <div class="about-icon">🎬</div>
