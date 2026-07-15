@@ -114,10 +114,10 @@ function renderAboutPage() {
       </div>
 
       <div class="about-contact">
-        <h2>تواصلي معنا</h2>
-        <p>رأيك يهمنا فعلاً — شاركينا تجربتك مع "جيل" عبر الاستبيان، أو تواصلي معنا مباشرة.</p>
+        <h2>تواصل معنا</h2>
+        <p>شاركونا تجاربكم مع "جيل" عبر الاستبيان، أو تواصل معنا مباشرة.</p>
         <div class="about-contact-actions">
-          <a class="big-button" href="${SURVEY_URL_ABOUT}" target="_blank" rel="noopener noreferrer">شاركينا رأيك (استبيان)</a>
+          <a class="big-button" href="${SURVEY_URL_ABOUT}" target="_blank" rel="noopener noreferrer">شاركونا ارائكم (استبيان)</a>
           <a class="big-button secondary" href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
         </div>
       </div>
