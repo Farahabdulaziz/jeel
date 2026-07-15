@@ -159,7 +159,7 @@ function welcomeIntroHTML() {
     <img class="site-logo-modal" src="assets/logo.png" alt="جيل">
     <p class="welcome-text">
       جيل موقع فيديوهات مختارة بعناية للأطفال (٣-٧ سنين) — محتوى عربي آمن يراعي القيم الإسلامية،
-       ومزوّد بمؤقت استخدام تتحكم فيه.
+      بدون اقتراحات أو إعلانات مزعجة، ومزوّد بمؤقت استخدام تتحكم فيه.
     </p>
   `;
 }
@@ -190,23 +190,6 @@ function openWelcomeModal() {
   document.getElementById('welcomeSkip').addEventListener('click', () => {
     localStorage.setItem(WELCOME_KEY, '1');
     closeModal();
-  });
-}
-
-function openInfoModal() {
-  const root = document.getElementById('modalRoot');
-  root.innerHTML = `
-    <div class="modal-backdrop" id="modalBackdrop">
-      <div class="modal-box welcome-box">
-        ${welcomeIntroHTML()}
-        <a class="big-button" href="${SURVEY_URL}" target="_blank" rel="noopener noreferrer">شاركينا رأيك</a>
-        <button class="big-button secondary" id="infoCloseBtn">إغلاق</button>
-      </div>
-    </div>
-  `;
-  document.getElementById('infoCloseBtn').addEventListener('click', closeModal);
-  document.getElementById('modalBackdrop').addEventListener('click', (e) => {
-    if (e.target.id === 'modalBackdrop') closeModal();
   });
 }
 

@@ -795,6 +795,29 @@ h1, h2 { margin: 0; font-weight: 700; }
 .about-conclusion h2 { color: #4A3410; margin-bottom: 10px; }
 .about-conclusion p { color: #4A3410; margin: 0; font-size: 14.5px; line-height: 1.9; }
 
+.about-contact {
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 20px;
+  margin-bottom: 24px;
+}
+.about-contact h2 { font-size: 16px; margin-bottom: 8px; }
+.about-contact p {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  margin: 0 0 16px;
+}
+.about-contact-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-contact-actions .big-button {
+  direction: ltr;
+}
+
 .about-refs {
   border-top: 1px solid var(--border);
   padding-top: 16px;
